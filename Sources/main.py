@@ -1,7 +1,8 @@
-from discord.ext import commands
 from util import *
+import discord
 
-client = commands.Bot(command_prefix='.')
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
 
 
 @client.event
